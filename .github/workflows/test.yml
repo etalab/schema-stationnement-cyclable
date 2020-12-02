@@ -26,4 +26,3 @@ jobs:
       run: |
         frictionless validate --source-type schema schema.json
         frictionless validate --schema schema.json exemple-valide.csv
-        frictionless validate --schema schema.json exemple-valide.xlsx
