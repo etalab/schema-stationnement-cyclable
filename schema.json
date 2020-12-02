@@ -105,7 +105,7 @@
       },
       {
          "name": "mobilier",
-         "description": "Type de mobilier de stationnement. Les valeurs autorisés sont (entre parenthèse équivalents OSM) :\n* arceau (stands)\n* ratelier (wall_loops)\n* ancrage (anchors)\n* potelet (bollard) \n* crochet (handlebar_holder)\n* racks double-étage (two-tier)\n* autre",
+         "description": "Type de mobilier de stationnement. Les valeurs autorisés sont (entre parenthèse équivalents OSM) :\n* arceau (bicyle_parking=stands)\n* ratelier (bicyle_parking=wall_loops)\n* ancrage (bicyle_parking=anchors)\n* potelet (bicyle_parking=bollard) \n* crochet (bicyle_parking=handlebar_holder)\n* racks double-étage (bicyle_parking=two-tier)\n* autre",
          "example": "arceau",
          "type": "string",
          "constraints":{
@@ -122,14 +122,14 @@
          }
       },
       {
-         "name": "abri",
-         "description": "Abri de stationnement. Les valeurs autorisées sont (entre parenthèse équivalents OSM) :\n * stationnement non fermé  \n * consigne collective fermée (shed) \n * box individuel fermé (lockers) \n * autre",
+         "name": "protection",
+         "description": "Protection du stationnement. Les valeurs autorisées sont (entre parenthèse équivalents OSM) :\n * stationnement non fermé  \n * consigne collective fermée (bicyle_parking=shed) \n * box individuel fermé (bicyle_parking=lockers) \n * autre",
          "example": "stationnement non fermé",
          "type": "string",
          "constraints":{
             "required":false,
             "enum": [
-               "stationnement non fermé ",
+               "stationnement non fermé",
                "consigne collective fermée",
                "box individuel fermé",
                "autre"
@@ -137,8 +137,8 @@
          }
       },
       {
-         "name": "est_ouvert",
-         "description": "Si le stationnement est couvert ou non",
+         "name": "hors_service",
+         "description": "état d’entretien de l'équipement",
          "example": true,
          "type": "boolean"
       },
@@ -149,16 +149,21 @@
          "type": "boolean"
       },
       {
+         "name": "couverture",
+         "description": "Le stationnement est couvert-il et est donc protégé de la pluie, de la neige et de la grêle ?",
+         "example": false,
+         "type": "boolean"
+      },
+      {
          "name": "acces",
-         "description": "Si l'accès au stationnement est libre ou restreint. Les valeurs autorisées sont (entre parenthèse équivalents OSM) :\n * public (yes)\n * privé (no / private /...)\n * payant (customers)",
+         "description": "Si l'accès au stationnement est libre ou restreint. Les valeurs autorisées sont (entre parenthèse équivalents OSM) :\n * libre (access=yes)\n * restreint (access=no / access=private / access=customers / ...)",
          "example": "public",
          "type": "string",
          "constraints":{
             "required":false,
             "enum": [
-               "public",
-               "privé",
-               "payant"
+               "libre",
+               "restreint"
             ]
          }
       },
@@ -194,27 +199,6 @@
          "description": "Date de dernière mise à jour des données.",
          "example": "2020-09-17",
          "type": "date"
-      },
-      {
-         "name": "gestion",
-         "description": "Gestionnaire du stationnement vélo",
-         "example": "Ville de Paris",
-         "type": "string"
-      },
-      {
-         "name": "etat",
-         "description": "État d’entretien de l'équipement",
-         "example": "",
-         "type": "string",
-         "constraints":{
-            "required":false,
-            "enum": [
-               "bon",
-               "dégradé",
-               "hors service",
-               "en projet"
-            ]
-         }
       }
    ],
    "primaryKey": "id_ct"

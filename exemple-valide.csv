@@ -1,2 +1,3 @@
-id_ct,id_osm,insee,xlong,ylat,capacite,mobilier,abri,est_couvert,acces,est_garde,site,source,commentaires,date_installation,date_maj,gestion,etat
-34172-SV-0001,n71729735,34172,1.452323,46.59698,8,arceau,"stationnement non fermé",true,public,false,,"Ville de Paris",,2017-01-01,2020-09-17,"Ville de Paris",bon
+id_local,id_osm,insee,xlong,ylat,capacite,mobilier,protection,couverture,acces,est_garde,site,date_installation,hors_service,source,date_maj,commentaires
+un_id,n71729735,34172,1.452323,46.59698,8,arceau,"stationnement non fermé",true,libre,false,https://opendata.paris.fr/,2017-01-01,false,"Ville de Paris",2020-09-17,"un tres long commentaire"
+un_autre_id,n71729739,34172,1.452327,46.597,8,arceau,,,,,,,,,,
