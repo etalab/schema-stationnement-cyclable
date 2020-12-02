@@ -58,9 +58,13 @@
       },
       {
          "name": "id_osm",
-         "description": "Identifiant OpenStreetMap, si les données proviennent d'OSM.",
+         "description": "Identifiant OpenStreetMap, si les données proviennent d'OSM.\nL'ID est construit avec une premiere lettre pour décrire le type puis l'identifiant OSM ('n' si c'est un noeud (node), 'w' si c'est chemin (way), 'r' si c'est une relation)",
          "example": "n71729735",
-         "type": "string"
+         "type": "string",
+         "constraints":{
+            "required":false,
+            "pattern": "^[r|w|r][0-9]*$"
+         }
       },
       {
          "name": "insee",
