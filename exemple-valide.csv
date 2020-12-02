@@ -1,5 +1,2 @@
-id,date_creation,nom
-42,2020-02-27,Brouette
-43,2020-02-25,Tracteur
-44,2020-02-25,Pelle
-45,2020-02-25,Bus
+id_ct,id_osm,insee,xlong,ylat,capacite,mobilier,abri,est_couvert,acces,est_garde,site,source,commentaires,date_installation,date_maj,gestion,etat
+34172-SV-0001,n71729735,34172,1.452323,46.59698,8,arceau,"stationnement non fermé",true,public,false,,"Ville de Paris",,2017-01-01,2020-09-17,"Ville de Paris",bon
