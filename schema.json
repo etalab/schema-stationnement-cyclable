@@ -66,7 +66,7 @@
          "type": "string",
          "constraints": {
             "required": false,
-            "pattern": "^[r|w|r][0-9]*$"
+            "pattern": "^[nwr][0-9]*$"
          }
       },
       {
@@ -127,7 +127,7 @@
       {
          "name": "protection",
          "description": "Protection du stationnement. Les valeurs autorisées sont (entre parenthèse équivalents OSM) :\n * stationnement non fermé  \n * consigne collective fermée (bicyle_parking=shed) \n * box individuel fermé (bicyle_parking=lockers) \n * autre",
-         "example": "stationnement non fermé",
+         "example": "autre",
          "type": "string",
          "constraints": {
             "required": false,
@@ -140,27 +140,15 @@
          }
       },
       {
-         "name": "hors_service",
-         "description": "état d’entretien de l'équipement",
-         "example": true,
-         "type": "boolean"
-      },
-      {
-         "name": "est_garde",
-         "description": "Si le stationnement est surveillé ou non",
-         "example": false,
-         "type": "boolean"
-      },
-      {
          "name": "couverture",
-         "description": "Le stationnement est couvert-il et est donc protégé de la pluie, de la neige et de la grêle ?",
+         "description": "Le stationnement est couvert et est-il donc protégé de la pluie, de la neige et de la grêle ?",
          "example": false,
          "type": "boolean"
       },
       {
          "name": "acces",
          "description": "Si l'accès au stationnement est libre ou restreint. Les valeurs autorisées sont (entre parenthèse équivalents OSM) :\n * libre (access=yes)\n * restreint (access=no / access=private / access=customers / ...)",
-         "example": "public",
+         "example": "libre",
          "type": "string",
          "constraints": {
             "required": false,
@@ -171,25 +159,20 @@
          }
       },
       {
+         "name": "est_garde",
+         "description": "Si le stationnement est surveillé ou non",
+         "example": false,
+         "type": "boolean"
+      },
+      {
          "name": "site",
          "description": "Site web d'information sur l'emplacement (abonnement/réservation...)",
          "example": "https://transport.data.gouv.fr/",
          "type": "string",
          "constraints": {
             "required": false,
-            "pattern": "^[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)$"
+            "pattern": "^(?:http(s)?:\/\/)?[\\w.-]+(?:\\.[\\w\\.-]+)+[\\w\\-\\._~:/?#[\\]@!\\$&'\\(\\)\\*\\+,;=.]+$"
          }
-      },
-      {
-         "name": "source",
-         "description": "Entité ayant fourni les données",
-         "example": "Ville de Paris",
-         "type": "string"
-      },
-      {
-         "name": "commentaires",
-         "description": "Commentaires divers sur le stationnement vélo",
-         "type": "string"
       },
       {
          "name": "date_installation",
@@ -198,11 +181,28 @@
          "type": "date"
       },
       {
+         "name": "hors_service",
+         "description": "état d’entretien de l'équipement",
+         "example": true,
+         "type": "boolean"
+      },
+      {
+         "name": "source",
+         "description": "Entité ayant fourni les données",
+         "example": "Ville de Paris",
+         "type": "string"
+      },
+      {
          "name": "date_maj",
          "description": "Date de dernière mise à jour des données.",
          "example": "2020-09-17",
          "type": "date"
+      },
+      {
+         "name": "commentaires",
+         "description": "Commentaires divers sur le stationnement vélo",
+         "type": "string"
       }
    ],
-   "primaryKey": "id_ct"
+   "primaryKey": "id_local"
 }
