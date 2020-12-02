@@ -3,27 +3,30 @@
    "name": "objets-importants",
    "title": "Schéma des stationnements cyclables",
    "description": "Spécification du schéma de données de stationnement cyclable",
-   "keywords":[
-      "transport", "mobilité", "vélo", "stationnement"
+   "keywords": [
+      "transport",
+      "mobilité",
+      "vélo",
+      "stationnement"
    ],
    "countryCode": "FR",
    "homepage": "https://github.com/etalab/schema-stationnement-cyclable",
    "path": "https://github.com/etalab/schema-stationnement-cyclable/raw/master/schema.json",
-   "licenses":[
+   "licenses": [
       {
          "title": "Etalab Licence Ouverte 2.0",
          "name": "etalab-2.0",
          "path": "https://spdx.org/licenses/etalab-2.0.html"
       }
    ],
-   "resources":[
+   "resources": [
       {
          "title": "Fichier valide (CSV)",
          "name": "exemple-valide-csv",
          "path": "https://github.com/mon-orga/schema-objets-importants/raw/v0.1.1/exemple-valide.csv"
       }
    ],
-   "sources":[
+   "sources": [
       {
          "title": "Fichier d'échange avec la communauté pour constituer la premiere version du schema.",
          "path": "https://docs.google.com/spreadsheets/d/1P-SmgmR3Fos7MMq4jeWi3S4N9KSqy0v6inu8zW4pG-A"
@@ -32,7 +35,7 @@
    "created": "2020-12-02",
    "lastModified": "2020-12-02",
    "version": "0.0.1",
-   "contributors":[
+   "contributors": [
       {
          "title": "Nicolas Berthelot",
          "email": "nicolas.berthelot@beta.gouv.fr",
@@ -46,14 +49,14 @@
          "role": "contributor"
       }
    ],
-   "fields":[
+   "fields": [
       {
-         "name": "id_ct",
+         "name": "id_local",
          "description": "Identifiant du stationnement dans le fichier",
          "example": "un_id",
          "type": "string",
-         "constraints":{
-            "required":true
+         "constraints": {
+            "required": true
          }
       },
       {
@@ -61,8 +64,8 @@
          "description": "Identifiant OpenStreetMap, si les données proviennent d'OSM.\nL'ID est construit avec une premiere lettre pour décrire le type puis l'identifiant OSM ('n' si c'est un noeud (node), 'w' si c'est chemin (way), 'r' si c'est une relation)",
          "example": "n71729735",
          "type": "string",
-         "constraints":{
-            "required":false,
+         "constraints": {
+            "required": false,
             "pattern": "^[r|w|r][0-9]*$"
          }
       },
@@ -77,10 +80,10 @@
          "description": "Longitude en degrés décimaux (point comme séparateur décimal, avec au moins 4 chiffres après le point décimal) de la localisation du stationnement vélo, exprimée dans le système de coordonnées WGS84",
          "example": "1.452323",
          "type": "number",
-         "constraints":{
-            "required":true,
-            "minimum":-180,
-            "maximum":180
+         "constraints": {
+            "required": true,
+            "minimum": -180,
+            "maximum": 180
          }
       },
       {
@@ -88,10 +91,10 @@
          "description": "Latitude en degrés décimaux (point comme séparateur décimal, avec au moins 4 chiffres après le point décimal) de la localisation du stationnement vélo, exprimée dans le système de coordonnées WGS84",
          "example": "46.59698",
          "type": "number",
-         "constraints":{
-            "required":true,
-            "minimum":-90,
-            "maximum":90
+         "constraints": {
+            "required": true,
+            "minimum": -90,
+            "maximum": 90
          }
       },
       {
@@ -99,8 +102,8 @@
          "description": "Nombre de places de stationnement disponibles (à ne pas confondre avec le nombre d'infrastructures : ex. 1 arceau = 2 places)",
          "example": 8,
          "type": "integer",
-         "constraints":{
-            "required":true
+         "constraints": {
+            "required": true
          }
       },
       {
@@ -108,8 +111,8 @@
          "description": "Type de mobilier de stationnement. Les valeurs autorisés sont (entre parenthèse équivalents OSM) :\n* arceau (bicyle_parking=stands)\n* ratelier (bicyle_parking=wall_loops)\n* ancrage (bicyle_parking=anchors)\n* potelet (bicyle_parking=bollard) \n* crochet (bicyle_parking=handlebar_holder)\n* racks double-étage (bicyle_parking=two-tier)\n* autre",
          "example": "arceau",
          "type": "string",
-         "constraints":{
-            "required":false,
+         "constraints": {
+            "required": false,
             "enum": [
                "arceau",
                "ratelier",
@@ -126,8 +129,8 @@
          "description": "Protection du stationnement. Les valeurs autorisées sont (entre parenthèse équivalents OSM) :\n * stationnement non fermé  \n * consigne collective fermée (bicyle_parking=shed) \n * box individuel fermé (bicyle_parking=lockers) \n * autre",
          "example": "stationnement non fermé",
          "type": "string",
-         "constraints":{
-            "required":false,
+         "constraints": {
+            "required": false,
             "enum": [
                "stationnement non fermé",
                "consigne collective fermée",
@@ -159,8 +162,8 @@
          "description": "Si l'accès au stationnement est libre ou restreint. Les valeurs autorisées sont (entre parenthèse équivalents OSM) :\n * libre (access=yes)\n * restreint (access=no / access=private / access=customers / ...)",
          "example": "public",
          "type": "string",
-         "constraints":{
-            "required":false,
+         "constraints": {
+            "required": false,
             "enum": [
                "libre",
                "restreint"
@@ -172,8 +175,8 @@
          "description": "Site web d'information sur l'emplacement (abonnement/réservation...)",
          "example": "https://transport.data.gouv.fr/",
          "type": "string",
-         "constraints":{
-            "required":false,
+         "constraints": {
+            "required": false,
             "pattern": "^[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)$"
          }
       },
