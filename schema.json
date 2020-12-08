@@ -61,7 +61,8 @@
       },
       {
          "name": "id_osm",
-         "description": "Identifiant OpenStreetMap, si les données proviennent d'OSM.\nL'ID est construit avec une premiere lettre pour décrire le type puis l'identifiant OSM ('n' si c'est un noeud (node), 'w' si c'est chemin (way), 'r' si c'est une relation)",
+         "title": "Identifiant OpenStreetMap, si les données proviennent d'OSM.",
+         "description": "L'ID est construit avec une premiere lettre pour décrire le type puis l'identifiant OSM ('n' si c'est un noeud (node), 'w' si c'est chemin (way), 'r' si c'est une relation)",
          "example": "n71729735",
          "type": "string",
          "constraints": {
@@ -77,6 +78,7 @@
       },
       {
          "name": "xlong",
+         "title": "Longitude en degrés décimaux",
          "description": "Longitude en degrés décimaux (point comme séparateur décimal, avec au moins 4 chiffres après le point décimal) de la localisation du stationnement vélo, exprimée dans le système de coordonnées WGS84",
          "example": "1.452323",
          "type": "number",
@@ -88,6 +90,7 @@
       },
       {
          "name": "ylat",
+         "title": "Latitude en degrés décimaux",
          "description": "Latitude en degrés décimaux (point comme séparateur décimal, avec au moins 4 chiffres après le point décimal) de la localisation du stationnement vélo, exprimée dans le système de coordonnées WGS84",
          "example": "46.59698",
          "type": "number",
@@ -108,7 +111,8 @@
       },
       {
          "name": "mobilier",
-         "description": "Type de mobilier de stationnement. Les valeurs autorisés sont (entre parenthèse équivalents OSM) :\n* arceau (bicyle_parking=stands)\n* ratelier (bicyle_parking=wall_loops)\n* ancrage (bicyle_parking=anchors)\n* potelet (bicyle_parking=bollard) \n* crochet (bicyle_parking=handlebar_holder)\n* racks double-étage (bicyle_parking=two-tier)\n* autre",
+         "title": "Type de mobilier de stationnement",
+         "description": "Les valeurs autorisés sont (entre parenthèse équivalents OSM) :\n* arceau (bicyle_parking=stands)\n* ratelier (bicyle_parking=wall_loops)\n* ancrage (bicyle_parking=anchors)\n* potelet (bicyle_parking=bollard) \n* crochet (bicyle_parking=handlebar_holder)\n* racks double-étage (bicyle_parking=two-tier)\n* autre",
          "example": "arceau",
          "type": "string",
          "constraints": {
@@ -126,7 +130,8 @@
       },
       {
          "name": "protection",
-         "description": "Protection du stationnement. Les valeurs autorisées sont (entre parenthèse équivalents OSM) :\n * stationnement non fermé  \n * consigne collective fermée (bicyle_parking=shed) \n * box individuel fermé (bicyle_parking=lockers) \n * autre",
+         "title": "Protection du stationnement",
+         "description": "Les valeurs autorisées sont (entre parenthèse équivalents OSM) :\n * stationnement non fermé\n * consigne collective fermée (bicyle_parking=shed) \n * box individuel fermé (bicyle_parking=lockers) \n * autre",
          "example": "autre",
          "type": "string",
          "constraints": {
@@ -147,6 +152,7 @@
       },
       {
          "name": "acces",
+         "title": "Si l'accès au stationnement est libre ou restreint",
          "description": "Si l'accès au stationnement est libre ou restreint. Les valeurs autorisées sont (entre parenthèse équivalents OSM) :\n * libre (access=yes)\n * restreint (access=no / access=private / access=customers / ...)",
          "example": "libre",
          "type": "string",
