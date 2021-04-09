@@ -234,7 +234,7 @@
       },
       {
          "name":"id_osm",
-         "description":"Identifiant OpenStreetMap, si les données proviennent d'OSM. On compose l'identifiant en tilisant la clef "n" s'il s'agit d'un noeud, "w" s'il s'agit d'un chemin et "r" s'il s'agit d'une relation.",
+         "description":"Identifiant OpenStreetMap, si les données proviennent d'OSM. On compose l'identifiant en utilisant la clef \"n\" s'il s'agit d'un noeud, \"w\" s'il s'agit d'un chemin et \"r\" s'il s'agit d'une relation.",
          "example":"34172",
          "type":"integer",
          "constraints":{
