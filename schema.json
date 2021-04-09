@@ -229,7 +229,7 @@
          "example":"STSI01",
          "type":"string",
          "constraints":{
-            "required":true,
+            "required":true
          }
       },
       {
@@ -238,7 +238,7 @@
          "example":"34172",
          "type":"integer",
          "constraints":{
-            "required":false,
+            "required":false
          }
       },
       {
@@ -445,7 +445,7 @@
          "example":"Ville de Poitiers",
          "type":"string",
          "constraints":{
-            "required":false,
+            "required":false
          }
       },
       {
@@ -454,7 +454,7 @@
          "example":"Ville de Poitiers",
          "type":"string",
          "constraints":{
-            "required":false,
+            "required":false
          }
       },
       {
@@ -463,7 +463,7 @@
          "example":"Ville de Poitiers",
          "type":"string",
          "constraints":{
-            "required":false,
+            "required":false
          }
       },
       {
