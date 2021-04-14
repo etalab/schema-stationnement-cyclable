@@ -31,9 +31,10 @@ Si vous n'utilisez pas GitHub, vous pouvez lancer ces tests sur votre machine ou
 Localement, voici la procédure à suivre pour installer l'environnement de test et lancer les tests :
 
 ```bash
-# Création d'un environnement virtuel en Python 3
-python3 -m venv venv
-source venv/bin/activate
+# Installation de la version de Python en vigueur avec pyenv
+# voir https://github.com/pyenv/pyenv
+pyenv install
+python --version
 
 # Installation des dépendances
 pip install -r requirements.txt
