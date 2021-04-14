@@ -424,9 +424,9 @@
          "description": "Site web d'information sur l'emplacement (abonnement/réservation...)",
          "example": "https://www.exemple.fr/stationnementvelo-maville/",
          "type": "string",
+         "format": "uri",
          "constraints": {
-            "required": false,
-            "format": "uri"
+            "required": false
          }
       },
       {
