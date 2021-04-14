@@ -2,6 +2,8 @@
 
 Ce dépôt contient les fichiers nécessaires pour démarrer la création d'un dépôt pour un schéma [Table Schema](https://specs.frictionlessdata.io/table-schema/).
 
+Pour modifier ce schéma, il peut être utile en particulier de se référer à la [spécification des descripteurs de champs](https://specs.frictionlessdata.io/table-schema/#field-descriptors).
+
 ## Utiliser ce template
 
 - Si vous créez votre dépôt sur GitHub, il vous suffit d'appuyer sur le bouton vert "Use this template". Consultez [la documentation](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) pour plus d'infos ;
