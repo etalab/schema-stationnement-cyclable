@@ -1,5 +1,2 @@
-id,date_creation,nom
-42,2020-02-27,Brouette
-43,2020-02-25,Tracteur
-44,2020-02-25,Pelle
-45,2020-02-25,Bus
+id_local,id_osm,code_com,xlong,ylat,capacite,capacite_cargo,mobilier,protection,couverture,acces,surveillance,lumiere,url_info,d_service,source,proprietaire,gestionnaire,date_maj,commentaires
+STSI01,n71729735,34172,1.452323,46.59698,8,3,arceau,stationnement non fermé,1,1,0,1,https://www.lpa.fr/se-garer-dans-un-parking/motos-scooters-velos/,2017,Ville de Paris,Ville de Paris,Ville de Paris,44091,
