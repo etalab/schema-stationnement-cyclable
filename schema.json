@@ -420,7 +420,7 @@
          }
       },
       {
-         "name": "url",
+         "name": "url_info",
          "description": "Site web d'information sur l'emplacement (abonnement/réservation...)",
          "example": "https://www.exemple.fr/stationnementvelo-maville/",
          "type": "string",
