@@ -433,7 +433,7 @@
          "name": "d_service",
          "description": "Date de mise en service du stationnement vélo (Notation ISO 8601, format AAAA)",
          "example": "2020-02-27",
-         "type": "date",
+         "type": "integer",
          "constraints": {
             "required": false
          }
