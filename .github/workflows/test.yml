@@ -8,10 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Installation Python 3.7
+    - name: Récupération de la version de Python à utiliser
+      id: python_version_check
+      run: echo ::set-output name=PYTHON_VERSION::$(cat .python-version)
+    - name: Installation Python
       uses: actions/setup-python@v1
       with:
-        python-version: '3.7'
+        python-version: "${{ steps.python_version_check.outputs.PYTHON_VERSION }}"
     - name: Cache pip
       uses: actions/cache@v1
       with:
@@ -22,8 +25,9 @@ jobs:
           ${{ runner.os }}-
     - name: Installation des dépendances
       run: pip install -r requirements.txt
-    - name: Vérification du schéma et des fichiers d'exemples
-      run: |
-        frictionless validate --source-type schema schema.json
-        frictionless validate --schema schema.json exemple-valide.csv
-        frictionless validate --schema schema.json exemple-valide.xlsx
+    - name: Vérification du schéma
+      run: frictionless validate --type schema schema.json
+    - name: Vérification du fichier d'exemple CSV
+      run: frictionless validate --schema schema.json exemple-valide.csv
+    - name: Vérification du fichier d'exemple XLSX
+      run: frictionless validate --schema schema.json exemple-valide.xlsx
