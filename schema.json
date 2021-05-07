@@ -219,6 +219,18 @@
          "email": "ttremblay@altinnova.com",
          "organisation": "Altinnova",
          "role": "contributor"
+      },
+      {
+         "title": "Claire Chappuis",
+         "email": "claire.chappuis@centrevaldeloire.fr",
+         "organisation": "Région Centre Val-de-Loire",
+         "role": "contributor"
+      },
+      {
+         "title": "Adrien Legros",
+         "email": "adrien.legros@centrevaldeloire.fr",
+         "organisation": "Région Centre Val-de-Loire",
+         "role": "contributor"
       }
    ],
    "fields": [
@@ -300,7 +312,7 @@
             "enum": [
                "ARCEAU",
                "RATELIER",
-               "CORCHET",
+               "CROCHET",
                "RACK DOUBLE ETAGE",
                "ANCRAGE",
                "POTELET",
