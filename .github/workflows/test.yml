@@ -12,7 +12,7 @@ jobs:
       id: python_version_check
       run: echo ::set-output name=PYTHON_VERSION::$(cat .python-version)
     - name: Installation Python
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v2
       with:
         python-version: "${{ steps.python_version_check.outputs.PYTHON_VERSION }}"
     - name: Cache pip
