@@ -1,2 +1,2 @@
-id_local,id_osm,code_com,xlong,ylat,capacite,capacite_cargo,mobilier,protection,couverture,acces,surveillance,lumiere,url_info,d_service,source,proprietaire,gestionnaire,date_maj,commentaires
-STSI01,n71729735,34172,1.452323,46.59698,8,3,ARCEAU,STATIONNEMENT NON FERME,1,LIBRE,0,1,https://www.lpa.fr/se-garer-dans-un-parking/motos-scooters-velos/,2017,Ville de Paris,Ville de Paris,Ville de Paris,2020-09-17,
+id_local,id_osm,code_com,xlong,ylat,capacite,capacite_cargo,type_accroche,mobilier,acces,gratuit,protection,couverture,surveillance,lumiere,url_info,d_service,source,proprietaire,gestionnaire,date_maj,commentaires
+STSI01,n71729735,38185,5.7145295,45.191463,8,3,CADRE ET ROUE,ARCEAU,LIBRE ACCES,1,STATIONNEMENT NON FERME,1,1,1,https://www.grenoble.fr/se-garer-dans-un-parking-velo/,2017,Grenoble Métropole,Ville de Grenoble,Ville de Grenoble,2020-09-17,L’accès au parking vélo est au sous-sol de la gare

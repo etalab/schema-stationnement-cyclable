@@ -291,22 +291,79 @@
          }
       },
       {
+         "name": "type_accroche",
+         "description": "Mode d'accrochage possible du vélo aux équipements de stationnement",
+         "example": "CADRE ET ROUE",
+         "type": "string",
+         "constraints": {
+            "required": true,
+            "enum": [
+               "ROUE",
+               "CADRE",
+               "CADRE ET ROUE"
+            ]
+         }
+      },
+      {
          "name": "mobilier",
          "description": "Type de mobilier de stationnement",
-         "example": "arceau",
+         "example": "ARCEAU",
          "type": "string",
          "constraints": {
             "required": false,
             "enum": [
                "ARCEAU",
                "RATELIER",
-               "CROCHET",
                "RACK DOUBLE ETAGE",
+               "CROCHET",
+               "SUPPORT GUIDON",
                "ANCRAGE",
                "POTELET",
                "ARCEAU VELO GRANDE TAILLE",
+               "AUCUN EQUIPEMENT",               
                "AUTRE"
             ]
+         }
+      },
+      {
+         "name": "acces",
+         "description": "Mode d'accès à l'emplacement de stationnement",
+         "example": "LIBRE",
+         "type": "string",
+         "constraints": {
+            "required": false,
+            "enum": [
+               "LIBRE ACCES",
+               "ABONNEMENT OU INSCRIPTION PREALABLE",
+               "PRIVE"
+            ]
+         }
+      },
+      {
+         "name": "gratuit",
+         "description": "Le stationnement est-il gratuit ?",
+         "example": "true",
+         "type": "boolean",
+         "trueValues": [
+            "true",
+            "True",
+            "TRUE",
+            "1",
+            "vrai",
+            "Vrai",
+            "VRAI"
+         ],
+         "falseValues": [
+            "false",
+            "False",
+            "FALSE",
+            "0",
+            "faux",
+            "Faux",
+            "FAUX"
+         ],
+         "constraints": {
+            "required": false
          }
       },
       {
@@ -349,20 +406,6 @@
          ],
          "constraints": {
             "required": false
-         }
-      },
-      {
-         "name": "acces",
-         "description": "Mode d'accès à l'emplacement de stationnement",
-         "example": "LIBRE",
-         "type": "string",
-         "constraints": {
-            "required": false,
-            "enum": [
-               "LIBRE",
-               "PAYANT",
-               "PRIVE"
-            ]
          }
       },
       {
