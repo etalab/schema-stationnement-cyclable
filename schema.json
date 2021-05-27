@@ -274,7 +274,7 @@
       },
       {
          "name": "capacite",
-         "description": "Nombre de places de stationnement disponibles sur l'emplacement",
+         "description": "Nombre de places de stationnement disponibles sur l'emplacement y compris les places adaptées à des vélos spéciaux.",
          "example": "14",
          "type": "integer",
          "constraints": {
@@ -317,7 +317,6 @@
                "RACK DOUBLE ETAGE",
                "CROCHET",
                "SUPPORT GUIDON",
-               "ANCRAGE",
                "POTELET",
                "ARCEAU VELO GRANDE TAILLE",
                "AUCUN EQUIPEMENT",               
@@ -341,7 +340,7 @@
       },
       {
          "name": "gratuit",
-         "description": "Le stationnement est-il gratuit ?",
+         "description": "L'usage de l'équipement de stationnement est-il gratuit ?",
          "example": "true",
          "type": "boolean",
          "trueValues": [
@@ -475,7 +474,7 @@
       {
          "name": "d_service",
          "description": "Date de mise en service du stationnement vélo (Notation ISO 8601, format AAAA)",
-         "example": "2020-02-27",
+         "example": "2017",
          "type": "integer",
          "constraints": {
             "required": false
@@ -484,7 +483,7 @@
       {
          "name": "source",
          "description": "Nom de l'organisation ayant fourni les données",
-         "example": "Ville de Poitiers",
+         "example": "Grand Poitiers",
          "type": "string",
          "constraints": {
             "required": false
