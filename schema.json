@@ -269,7 +269,7 @@
       },
       {
          "name": "capacite",
-         "description": "Nombre de places de stationnement disponibles sur l'emplacement y compris les places adaptées à des vélos spéciaux.",
+         "description": "Nombre de places de stationnement disponibles sur l'emplacement y compris les places adaptées à des vélos spéciaux (comme les vélos de grande taille).",
          "example": "14",
          "type": "integer",
          "constraints": {
@@ -322,7 +322,7 @@
       {
          "name": "acces",
          "description": "Mode d'accès à l'emplacement de stationnement",
-         "example": "LIBRE",
+         "example": "ACCES LIBRE",
          "type": "string",
          "constraints": {
             "required": false,
