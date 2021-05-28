@@ -72,7 +72,6 @@ Ce dépôt contient un ensemble de fichiers utiles pour un dépôt d'un schéma 
 
 - [`CHANGELOG.md`](CHANGELOG.md) contient la liste des changements entre les différentes versions du schéma ;
 - [`exemple-valide.csv`](exemple-valide.csv) est un fichier CSV d'exemple conforme par rapport au schéma décrit dans `schema.json`  ;
-- [`exemple-valide.xlsx`](exemple-valide.xlsx) est un fichier XLSX d'exemple conforme par rapport au schéma décrit dans `schema.json` ;
 - [`LICENSE.md`](LICENSE.md) est le fichier de licence du dépôt ;
 - [`README.md`](README.md) est le fichier que vous lisez actuellement ;
 - [`requirements.txt`](requirements.txt) liste les dépendances Python nécessaires pour effectuer des tests en intégration continue sur le dépôt ;
@@ -109,7 +108,6 @@ frictionless validate --type schema schema.json
 
 # Test de la conformité des fichiers d'exemples
 frictionless validate --schema schema.json exemple-valide.csv
-frictionless validate --schema schema.json exemple-valide.xlsx
 ```
 
 
