@@ -26,11 +26,6 @@
          "path": "https://github.com/etalab/schema-stationnement-cyclable/raw/v1.1/exemple-valide.csv"
       },
       {
-         "title": "Ressource valide (XLSX)",
-         "name": "exemple-valide-xlsx",
-         "path": "https://github.com/etalab/schema-stationnement-cyclable/raw/v1.1/exemple-valide.xlsx"
-      },
-      {
          "title": "Ressource invalide",
          "name": "exemple-invalide",
          "path": "https://github.com/etalab/schema-stationnement-cyclable/raw/v1.1/exemple-invalide.csv"
