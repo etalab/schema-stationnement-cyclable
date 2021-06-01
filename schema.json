@@ -295,7 +295,8 @@
             "enum": [
                "ROUE",
                "CADRE",
-               "CADRE ET ROUE"
+               "CADRE ET ROUE",
+               "SANS ACCROCHE"
             ]
          }
       },
