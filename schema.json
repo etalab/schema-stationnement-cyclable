@@ -295,7 +295,8 @@
             "enum": [
                "ROUE",
                "CADRE",
-               "CADRE ET ROUE"
+               "CADRE ET ROUE",
+               "SANS ACCROCHE"
             ]
          }
       },
@@ -322,7 +323,7 @@
       {
          "name": "acces",
          "description": "Mode d'accès à l'emplacement de stationnement",
-         "example": "ACCES LIBRE",
+         "example": "LIBRE ACCES",
          "type": "string",
          "constraints": {
             "required": false,
