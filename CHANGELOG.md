@@ -13,3 +13,7 @@ Ce fichier répertorie les changements entre différentes versions d'un schéma.
 - Modification du champ optionnel "acces"
 - Création du champ optionnel "gratuit"
 - Corrections diverses
+
+## Version 1.0 2021-06-30
+
+- Première version officielle du schéma national pour le stationnement cyclable
