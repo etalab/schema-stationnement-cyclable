@@ -1,2 +1,3 @@
-id_local,id_osm,code_com,xlong,ylat,capacite,capacite_cargo,type_accroche,mobilier,acces,gratuit,protection,couverture,surveillance,lumiere,url_info,d_service,source,proprietaire,gestionnaire,date_maj,commentaires
-STSI01,n71729735,38185,5.7145295,45.191463,8,3,CADRE ET ROUE,ARCEAU,LIBRE ACCES,1,STATIONNEMENT NON FERME,1,1,1,https://www.grenoble.fr/se-garer-dans-un-parking-velo/,2017,Grenoble Métropole,Ville de Grenoble,Ville de Grenoble,2020-09-17,L’accès au parking vélo est au sous-sol de la gare
+id_local,id_osm,code_com,coordonneesxy,capacite,capacite_cargo,type_accroche,mobilier,acces,gratuit,protection,couverture,surveillance,lumiere,url_info,d_service,source,proprietaire,gestionnaire,date_maj,commentaires
+STSI01,n71729735,38185,"[5.7145295,45.191463]
+",8,3,CADRE ET ROUE,ARCEAU,LIBRE ACCES,1,STATIONNEMENT NON FERME,1,1,1,https://www.grenoble.fr/se-garer-dans-un-parking-velo/,2017,Grenoble Métropole,Ville de Grenoble,Ville de Grenoble,2020-09-17,L’accès au parking vélo est au sous-sol de la gare
