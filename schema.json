@@ -238,7 +238,7 @@
       {
          "name": "code_com",
          "description": "Code INSEE de la commune où se trouve le stationnement vélo",
-         "example": "n71729735",
+         "example": "67023",
          "type": "string",
          "constraints": {
             "required": false,
