@@ -1,6 +1,8 @@
 # Changelog
 
 Ce fichier répertorie les changements entre différentes versions d'un schéma.
+## Version 1.2 2022-03-01
+- Correction de l'exemple pour le champ code_com du fichier schema.json
 
 ## Version 1.1 2021-11-08
 - Modification du mode de représentation géographique des équipements de stationnement cyclable xlong ylat --> coordonneesxy
