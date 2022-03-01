@@ -5,7 +5,7 @@ click==7.1.2
 colorama==0.4.4
 decorator==5.0.7
 et-xmlfile==1.0.1
-frictionless==4.7.1
+frictionless==4.26.0
 idna==2.10
 ijson==3.1.4
 isodate==0.6.0
