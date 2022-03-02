@@ -510,5 +510,13 @@
          }
       }
    ],
+   "custom_checks":[
+      {
+          "name":"french-insee-value",
+          "params":{
+              "column":"code_com"
+          }
+      }
+  ],
    "primaryKey": "id_local"
 }
