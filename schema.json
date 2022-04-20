@@ -512,12 +512,6 @@
    ],
    "custom_checks":[
       {
-          "name":"french-insee-value",
-          "params":{
-              "column":"code_com"
-            }    
-      },
-      {
             "name":"french_gps_coordinates",
             "params":{
                 "column":"coordonneesXY"
