@@ -11,7 +11,7 @@
    ],
    "countryCode": "FR",
    "homepage": "https://github.com/etalab/schema-stationnement-cyclable",
-   "path": "https://github.com/etalab/schema-stationnement-cyclable/raw/v1.1.1/schema.json",
+   "path": "https://github.com/etalab/schema-stationnement-cyclable/raw/v1.1.2/schema.json",
    "licenses": [
       {
          "title": "Etalab Licence Ouverte 2.0",
