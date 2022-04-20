@@ -11,6 +11,7 @@
    ],
    "countryCode": "FR",
    "homepage": "https://github.com/etalab/schema-stationnement-cyclable",
+
    "path": "https://github.com/etalab/schema-stationnement-cyclable/raw/v1.1.2/schema.json",
    "licenses": [
       {
@@ -23,17 +24,20 @@
       {
          "title": "Ressource valide (CSV)",
          "name": "exemple-valide-csv",
+
          "path": "https://github.com/etalab/schema-stationnement-cyclable/raw/v1.1.2/exemple-valide.csv"
       },
       {
          "title": "Ressource invalide",
          "name": "exemple-invalide",
+
          "path": "https://github.com/etalab/schema-stationnement-cyclable/raw/v1.1.2/exemple-invalide.csv"
       }
    ],
    "created": "2021-03-10",
    "lastModified": "2022-04-20",
    "version": "1.1.2",
+
    "contributors": [
       {
          "title": "Nicolas Berthelot",

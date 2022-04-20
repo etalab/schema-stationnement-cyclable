@@ -1,6 +1,7 @@
 # Changelog
 
 Ce fichier répertorie les changements entre différentes versions d'un schéma.
+
 ## Version 1.1.2 2022-04-20
 - Ajout d'une vérification des coordonnées géographiques pour le champ `coordonneesXY`
 
