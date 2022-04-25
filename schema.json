@@ -279,7 +279,7 @@
          "example": "CADRE ET ROUE",
          "type": "string",
          "constraints": {
-            "required": true,
+            "required": false,
             "enum": [
                "ROUE",
                "CADRE",
